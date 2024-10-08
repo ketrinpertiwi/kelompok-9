@@ -21,7 +21,23 @@ int komputer, pemain;
     cout << "Masukkan pilihan Anda (0/1/2) : ";
     cin >> pemain;
 
+// Memastikan input yang dimasukkan pemain valid
+        while (pemain < 0 || pemain > 2) {
+            cout << "Pilihan tidak valid. Silakan masukkan 0, 1, atau 2: ";
+            cin >> pemain;
+        }
 
+        cout << "Pilihan Komputer: " << komputer << endl;
+        cout << "Pilihan Anda: " << pemain << endl;
+
+        // Menentukan pemenang
+        if (pemain == komputer) {
+            cout << "Hasil: Seri!" << endl;
+        } else if ((pemain == 0 && komputer == 1) || (pemain == 1 && komputer == 2) || (pemain == 2 && komputer == 0)) {
+            cout << "Selamat! Anda menang!" << endl;
+        } else {
+            cout << "Sayang sekali, Anda kalah!" << endl;
+        }
 
 //menanyakan apakah pemain ingin bermain lagi
         cout << "play again? (y/n) : ";
