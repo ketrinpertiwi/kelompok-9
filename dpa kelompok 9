@@ -1,11 +1,13 @@
+//library n namespace
 #include <iostream>
-
 using namespace std;
 
 int main(){
+//deklarasi variabel
 int komputer, pemain;
-  char mainLagi;
+  char playAgain;
 
+//looping menggunakan do-while
   do {
     // Menghasilakan pilihan acak untuk komputer
     komputer = (time(0) % 3) & 3);
@@ -18,3 +20,15 @@ int komputer, pemain;
     cout << "2- Kertas" << endl;
     cout << "Masukkan pilihan Anda (0/1/2) : ";
     cin >> pemain;
+
+
+
+//menanyakan apakah pemain ingin bermain lagi
+        cout << "play again? (y/n) : ";
+        cin >> playAgain;
+} while (playAgain ++ 'y' || playAgain == 'Y');
+
+//mengakhiri program
+cout << "thank you for playing!" << endl;
+return 0;
+}
