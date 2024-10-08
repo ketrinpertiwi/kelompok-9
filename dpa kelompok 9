@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+int komputer, pemain;
+  char mainLagi;
+
+  do {
+    // Menghasilakan pilihan acak untuk komputer
+    komputer = (time(0) % 3) & 3);
+    // Menggunakan time sebagai seed sederhana
+
+    // Menampilkan pilihan kepada pemain
+    cout << "Pilih : " << endl;
+    cout << "0- Batu" << endl;
+    cout << "1- Gunting" << endl;
+    cout << "2- Kertas" << endl;
+    cout << "Masukkan pilihan Anda (0/1/2) : ";
+    cin >> pemain;
