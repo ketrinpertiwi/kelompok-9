@@ -1,0 +1,1 @@
+Kami membuat program Game Suit (Batu, Gunting, Kertas) yang dimana player bisa beradu suit dengan komputer dan kami buat agar player bisa memilih apakah player ingin melanjutkan game atau ingin mengakhiri game
