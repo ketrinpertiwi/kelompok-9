@@ -1,5 +1,6 @@
 //library n namespace
 #include <iostream>
+#include <ctime>
 using namespace std;
 
 int main(){
@@ -42,7 +43,7 @@ int komputer, pemain;
 //menanyakan apakah pemain ingin bermain lagi
         cout << "play again? (y/n) : ";
         cin >> playAgain;
-} while (playAgain ++ 'y' || playAgain == 'Y');
+} while (playAgain == 'y' || playAgain == 'Y');
 
 //mengakhiri program
 cout << "thank you for playing!" << endl;
