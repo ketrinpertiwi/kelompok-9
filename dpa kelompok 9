@@ -11,7 +11,7 @@ int komputer, pemain;
 //looping menggunakan do-while
   do {
     // Menghasilakan pilihan acak untuk komputer
-    komputer = (time(0) % 3) & 3);
+    komputer = (time(0) % 3);
     // Menggunakan time sebagai seed sederhana
 
     // Menampilkan pilihan kepada pemain
