@@ -3,8 +3,8 @@
 #include <ctime>
 using namespace std;
 
-int main(){
-//deklarasi variabel
+//deklarasi fungsi void
+void mainGame(){
 int komputer, pemain;
   char playAgain;
 
@@ -47,5 +47,10 @@ int komputer, pemain;
 
 //mengakhiri program
 cout << "thank you for playing!" << endl;
+}
+
+int main (){
+//memanggil fungsi void
+mainGame();
 return 0;
 }
